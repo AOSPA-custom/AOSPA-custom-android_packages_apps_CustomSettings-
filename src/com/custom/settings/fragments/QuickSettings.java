@@ -46,6 +46,10 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingEditTextPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
+
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
