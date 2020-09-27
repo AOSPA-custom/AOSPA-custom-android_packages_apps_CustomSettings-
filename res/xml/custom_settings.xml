@@ -32,11 +32,12 @@
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Misc -->
+<!--
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.custom.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_miscs"/>
-    
+-->    
 
 </PreferenceScreen>
