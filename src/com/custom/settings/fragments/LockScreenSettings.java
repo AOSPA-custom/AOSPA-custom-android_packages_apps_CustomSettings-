@@ -46,22 +46,35 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.custom.settings.util.CustomContextConstants;
+
 import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
 import com.dirtyunicorns.support.preferences.SystemSettingEditTextPreference;
 import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
 
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker_category";
+
+    private Preference mFODIconPicker;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.custom_settings_lockscreen);
-
+        PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-        Resources resources = getResources();
 
+        PackageManager packageManager = getContext().getPackageManager();
+        boolean hasFod = packageManager.hasSystemFeature(CustomContextConstants.Features.FOD);
+
+        mFODIconPicker = (Preference) findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPicker != null && !hasFod) {
+            prefSet.removePreference(mFODIconPicker);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

@@ -31,5 +31,11 @@
         android:summary="@string/lockscreen_style_summary"
         android:fragment="com.custom.settings.fragments.LockscreenStyle" />
 
+    <!-- FOD icon picker -->
+    <Preference
+        android:key="fod_icon_picker_category"
+        android:title="@string/fod_icon_picker_title"
+        android:summary="@string/fod_icon_picker_summary"
+        android:fragment="com.custom.settings.fragments.FODIconPickerFragment" />
 
 </PreferenceScreen>
