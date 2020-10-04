@@ -206,6 +206,9 @@
         <item>@string/fod_recog_animation_pureview_future</item>
         <item>@string/fod_recog_animation_pureview_halo_ring</item>
         <item>@string/fod_recog_animation_pureview_molecular</item>
+        <item>@string/fod_recog_animation_rogfusion</item>
+        <item>@string/fod_recog_animation_rogpulsar</item>
+        <item>@string/fod_recog_animation_rogsupernova</item>
     </string-array>
 
     <string-array name="fod_recog_animation_values" translatable="false">
@@ -224,5 +227,8 @@
         <item>12</item>
         <item>13</item>
         <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
     </string-array>
 </resources>  

@@ -152,4 +152,7 @@
     <string name="fod_recog_animation_pureview_future">Future</string>
     <string name="fod_recog_animation_pureview_halo_ring">Halo ring</string>
     <string name="fod_recog_animation_pureview_molecular">Molecular</string>
+    <string name="fod_recog_animation_rogfusion">ROG Fusion</string>
+    <string name="fod_recog_animation_rogpulsar">ROG Pulsar</string>
+    <string name="fod_recog_animation_rogsupernova">ROG Supernova</string>
 </resources>
